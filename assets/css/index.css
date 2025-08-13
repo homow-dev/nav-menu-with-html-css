@@ -1,0 +1,220 @@
+body {
+    background-color: var(--background);
+}
+
+/* شروع کن. */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#fixed-header {
+    padding: .5rem 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(7px);
+    z-index: 999;
+}
+
+.designed-by-homow {
+    display: none;
+    position: absolute;
+    bottom: 55px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: var(--primary__black);
+}
+
+.center-flex-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open__nav-menu {
+    right: 0 !important;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo a {
+    height: 58px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    border-radius: 4px;
+    width: 100%;
+}
+
+.wrapper__fixed-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.theme {
+    width: 41px;
+    height: 40px;
+}
+
+.theme i {
+    line-height: 28px;
+    font-size: 2rem;
+    background-color: var(--primary__black);
+    color: var(--primary__white);
+    border-radius: 100%;
+    padding: 0.5rem 0.6rem;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-menu__items:last-child .nav-menu__link:hover {
+    background-color: var(--primary__hover) !important;
+}
+
+.nav-menu__link {
+    color: var(--primary__black);
+    padding: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+    font-weight: 500;
+    transition: 300ms;
+}
+
+.home .nav-menu__link {
+    align-items: baseline;
+}
+
+.nav-menu__link:hover {
+    color: var(--nav-menu__hover-new__color);
+}
+
+.btn__nav-menu {
+    display: none;
+    font-size: 2rem;
+    color: var(--primary__black);
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .nav-menu {
+        gap: 1.5rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1000px) {
+    .theme i {
+        line-height: 24px;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .nav-menu {
+        gap: 1.2rem;
+    }
+
+    .nav-menu__link {
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .logo {
+        display: block;
+    }
+
+    .logo a {
+        height: 46px;
+    }
+
+    .wrapper__fixed-header {
+        flex-direction: row;
+    }
+
+    .nav-menu {
+        position: fixed;
+        width: 200px;
+        top: 0;
+        right: -240px;
+        bottom: -100vh;
+        z-index: 99999;
+        flex-direction: column;
+        background-color: var(--nav-menu__bg-color);
+        gap: 1rem;
+        box-shadow: 0 0 4px 0 var(--nav-menu__bg-color);
+        transition: all 0.5s;
+        padding-top: .8rem;
+    }
+
+    .nav-menu__link:hover {
+        color: var(--primary__white);
+        background-color: var(--nav-menu__hover-new__bc);
+    }
+
+    .designed-by-homow {
+        display: block;
+    }
+
+    .theme {
+        margin-right: .5rem;
+        align-self: start;
+        width: 39px;
+        height: 37px;
+    }
+
+    .nav-menu__items {
+        width: 100%;
+    }
+
+    .nav-menu__link {
+        width: 100%;
+        background-color: unset;
+        color: var(--primary__black);
+        padding: 18px 20px 18px 50px;
+    }
+
+    .btn__nav-menu {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    .nav-menu {
+        font-size: .9rem;
+    }
+}

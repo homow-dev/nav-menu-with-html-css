@@ -1,0 +1,79 @@
+:root {
+    /* --- fonts --- */
+    --bold-font: "dana extrabold";
+
+    /* --- colors --- */
+
+    /* header */
+    --gradient__header: radial-gradient(101.4% 61.3% at 12.4% 100%, #b9dfff 0%, #dfe9ff 100%);
+    --primary__balck-header: #000;
+    --primary__gery-header: #000;
+    --background__version-header: rgb(235 235 235 / 40%);
+    --nav-menu__bg-color: #ebefff;
+    --nav-menu__hover-new__bc: #343538;
+
+    /* hover  */
+    --nav-menu__hover-new__color: #5d5a5a;
+    --primary__hover: #343538;
+    --primary-btn__hover-color: #fff;
+
+    /* main */
+    --background: #dfe9ff;
+    --gradient__main: radial-gradient(101.4% 61.3% at 12.4% 0, #b9dfff 0%, #dfe9ff 100%);
+    --primary__gery: #5e5f64;
+    --primary__black: #111111;
+    --primary__white: #fff;
+    --text__color: #272626;
+    --green__code: rgba(0, 255, 145, .8);
+    --primary__bc-grey: rgb(36 42 56);
+    --title-box: #000;
+    --box-shadow: 0 2px 8px 2px #a1a9c6;
+    --inset-shadow: 0 0 5px 0 #1e1f26 inset;
+    --box-hover: rgba(0, 0, 0, 0.05);
+    --new-box-hover: rgba(0, 0, 0, 0.05);
+    --background-green: #AEC8A4;
+    --go-to__about-site-bg: #3f7a7a;
+    --icon-color: #50515A;
+    --icon-color__bold: #50515A;
+
+    /* footer */
+    --background__footer: linear-gradient(to left, #e0eaff, #c2d4ff);
+    --footer__color: #1a1a1a;
+    --footer__link: #272626;
+    --border__footer: 1px solid rgb(255, 255, 255);
+}
+
+.dark {
+    /* header */
+    --primary__gery-header: #ccc;
+    --background__version-header: rgb(235 235 235 / 78%);
+    --nav-menu__bg-color: #0b0b0b;
+    --nav-menu__hover-new__bc: #b4b6bb;
+    --nav-menu__hover-new__color: #858383;
+
+    /* hover */
+    --primary-btn__hover-color: #000;
+
+    /* main */
+    --gradient__header: radial-gradient(101.4% 61.3% at 12.40% 0, #1e1f26 100%, rgb(73 76 88) 200%, rgb(51 54 64) 100%);
+    --gradient__main: radial-gradient(101.4% 61.3% at 12.40% 100%, #1e1f26 100%, rgb(73 76 88) 200%, rgb(51 54 64) 100%);
+    --background: #1e1f26;
+    --primary__black: #fff;
+    --primary__white: rgba(0, 0, 0, 0.93);
+    --primary__gery: #ddd;
+    --title-box: #e5e3e3;
+    --primary__hover: rgba(114, 112, 112, 0.95);
+    --box-shadow: 0 2px 8px 2px #121318;
+    --box-hover: rgba(0, 0, 0, 0.25);
+    --new-box-hover: rgba(0, 0, 0, 0.25);
+    --background-green: #27391C;
+    --go-to__about-site-bg: darkslategrey;
+    --icon-color: #9AA0B3;
+    --icon-color__bold: #5B6275;
+
+    /* footer */
+    --background__footer: #2a2d37;
+    --footer__color: #dddddd;
+    --footer__link: #ECF0F1;
+    --border__footer: 1px solid rgba(255, 255, 255, 0.05);
+}
